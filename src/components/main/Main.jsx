@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Admin, Seller } from "../"
+import { Admin, Salesman,Seller} from "../"
 
 
 const Main = () => {
@@ -18,7 +18,7 @@ const Main = () => {
   return (
     <>
       {
-        role === "admin" ? (<Admin />) : <Seller/>
+        role === "admin" ? (<Admin />) : <Salesman/>
       }
     </>
   )
